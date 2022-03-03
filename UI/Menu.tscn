@@ -80,8 +80,8 @@ void fragment() {
 
 [sub_resource type="ShaderMaterial" id=7]
 shader = SubResource( 6 )
-shader_param/BackColor = Color( 0, 0.4, 0.58, 1 )
-shader_param/CloudColor = Color( 0.18, 0.7, 0.87, 1 )
+shader_param/BackColor = Color( 0, 0.00784314, 0.580392, 1 )
+shader_param/CloudColor = Color( 0.2, 0.180392, 0.870588, 1 )
 shader_param/speed = 2.0
 
 [sub_resource type="DynamicFont" id=3]
@@ -120,12 +120,20 @@ __meta__ = {
 }
 
 [node name="Label" type="Label" parent="."]
-margin_right = 576.0
-margin_bottom = 512.0
+margin_left = 2.0
+margin_top = 1.0
+margin_right = 578.0
+margin_bottom = 513.0
 custom_fonts/font = SubResource( 3 )
-text = "Welcome to Match-3"
+text = "Welcome to Matts Juicy Ass-3
+
+
+			created by: Joey Barenie"
 align = 1
 valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
 [node name="Play" type="Button" parent="."]
 margin_left = 238.0
@@ -145,6 +153,9 @@ margin_right = 338.0
 margin_bottom = 602.0
 custom_fonts/font = SubResource( 5 )
 text = "Quit"
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
 [connection signal="pressed" from="Play" to="." method="_on_Play_pressed"]
 [connection signal="pressed" from="Quit" to="." method="_on_Quit_pressed"]
